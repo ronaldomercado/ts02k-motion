@@ -10,7 +10,8 @@ if [ "$1" = "-d" ]; then
         EDMDATAFILES="${EDMDATAFILES}${d}:"
     done
     EDMDATAFILES="${EDMDATAFILES}${TOP}/data:"
-    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/idMotion/0-1/idMotionApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/idMotion/0-2/idMotionApp/opi/edl:"
+    EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/idPLC/0-8/idPLCApp/opi/edl:"
     EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/motor/7-0dls9-1/motorApp/opi/edl:"
     EDMDATAFILES="${EDMDATAFILES}/dls_sw/prod/R3.14.12.7/support/pmac/2-7-9/pmacApp/opi/edl:"
 
@@ -20,7 +21,8 @@ else
 fi
 EDMDATAFILES="${EDMDATAFILES}${TOP}/data"
 EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/asyn/4-41dls2/data"
-EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/idMotion/0-1/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/idMotion/0-2/data"
+EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/idPLC/0-8/data"
 EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/motor/7-0dls9-1/data"
 EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/pmac/2-7-9/data"
 EDMDATAFILES="${EDMDATAFILES}:/dls_sw/prod/R3.14.12.7/support/pvlogging/1-4/data"
