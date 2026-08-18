@@ -1,0 +1,10 @@
+TS02K-MO-IOC-01App/Db/O.*
+TS02K-MO-IOC-01App/opi/edl/O.*
+.iocsh_history
+TS02K-MO-IOC-01App/src/O.*
+configure/O.*
+iocBoot/iocTS02K-MO-IOC-01/O.*
+bin
+db
+dbd
+
