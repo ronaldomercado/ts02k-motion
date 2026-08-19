@@ -22,7 +22,7 @@ TS02K_MO_IOC_01_registerRecordDeviceDriver(pdbbase)
 asSetFilename '/epics/support/pvlogging/src/access.acf'
 
 # Create SSH Port (PortName, IPAddress, Username, Password, Priority, DisableAutoConnect, noProcessEos)
-drvAsynPowerPMACPortConfigure("SSHP", "172.23.243.14", "root", "deltatau", "0", "0", "0")
+drvAsynPowerPMACPortConfigure("SSHP", "192.168.116.1", "root", "deltatau", "0", "0", "0")
 
 # Configure Model 3 Controller Driver (ControlerPort, LowLevelDriverPort, Address, Axes, MovingPoll, IdlePoll)
 pmacCreateController("pwbrick", "SSHP", 0, 4, 100, 1000)
@@ -33,6 +33,11 @@ pmacCreateAxes("pwbrick", 4)
 pmacCreateCS("PPMAC_1_CS_2", "pwbrick", 2, 10)
 # Configure Model 3 CS Axes Driver (CSPortName, CSAxisCount)
 pmacCreateCSAxes("PPMAC_1_CS_2", 9)
+
+# Create CS (CSPortName, ControllerPort, CSNumber, ProgramNumber)
+pmacCreateCS("PPMAC_1_CS_3", "pwbrick", 3, 10)
+# Configure Model 3 CS Axes Driver (CSPortName, CSAxisCount)
+pmacCreateCSAxes("PPMAC_1_CS_3", 9)
 
 # Final ioc initialisation
 # ------------------------
