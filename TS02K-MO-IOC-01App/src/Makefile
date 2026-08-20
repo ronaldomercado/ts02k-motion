@@ -9,6 +9,7 @@ include $(TOP)/configure/CONFIG
 PROD_IOC = TS02K-MO-IOC-01
 DBD += TS02K-MO-IOC-01.dbd
 TS02K-MO-IOC-01_DBD += base.dbd
+TS02K-MO-IOC-01_DBD += devIocStats.dbd
 TS02K-MO-IOC-01_DBD += pvlogging.dbd
 TS02K-MO-IOC-01_DBD += asyn.dbd
 TS02K-MO-IOC-01_DBD += drvAsynPowerPMACPort.dbd
@@ -26,6 +27,7 @@ TS02K-MO-IOC-01_LIBS += motor
 TS02K-MO-IOC-01_LIBS += powerPmacAsynPort
 TS02K-MO-IOC-01_LIBS += asyn
 TS02K-MO-IOC-01_LIBS += pvlogging
+TS02K-MO-IOC-01_LIBS += devIocStats
 TS02K-MO-IOC-01_LIBS += $(EPICS_BASE_IOC_LIBS)
 TS02K-MO-IOC-01_SRCS += TS02K-MO-IOC-01Main.cpp
 
