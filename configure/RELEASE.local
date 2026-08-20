@@ -11,7 +11,7 @@ PVXS=/epics/support/pvxs
 
 # Additional Support Modules for individual IOCs will be added below this line
 SNCSEQ = /epics/support/sequencer
-DEVIOCSTATS = /epics/support/iocStats
+IOCSTATS = /epics/support/iocStats
 SSCAN = /epics/support/sscan
 CALC = /epics/support/calc
 ASYN = /epics/support/asyn
