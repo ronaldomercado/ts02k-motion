@@ -192,8 +192,8 @@ pattern { P, M, PORT, ADDR, DESC, MRES, VELO, PREC, EGU, TWV, DTYP, DIR, VBAS, V
 file $(PMAC)/db/dls_pmac_cs_asyn_motor.template
 {
 pattern { P, M, PORT, ADDR, DESC, MRES, VELO, PREC, EGU, TWV, DTYP, DIR, VBAS, VMAX, ACCL, BDST, BVEL, BACC, DHLM, DLLM, HLM, LLM, HLSV, INIT, SREV, RRES, ERES, JAR, UEIP, URIP, RDBL, RLNK, RTRY, DLY, OFF, RDBD, FOFF, ADEL, NTM, FEHIGH, FEHIHI, FEHHSV, FEHSV, SCALE, HOMEVIS, HOMEVISSTR, name, alh, gda_name, gda_desc, PMAC, CS }
-    { "TS16K-MO-SERVC-01:CS", ":GAP", "PPMAC_1_CS_2", "1", "ID Gap", "0.000005", "1", "5", "mm", "0.02", "asynMotor", "0", "0", "$(VELO)", "0.5", "0", "0", "", "100.02", "3.98", "", "", "MAJOR", "", "1000", "", "", "", "0", "0", "", "", "0", "0", "0", "", "0", "0", "1", "0", "0", "NO_ALARM", "NO_ALARM", "1", "1", "Use motor summary screen", "IDGAP", "None", "", "$(DESC)", "TS16K-MO-SERVO-01", "2" }
-    { "TS16K-MO-SERVC-01:CS", ":OFFSET", "PPMAC_1_CS_3", "1", "ID Offset", "0.000005", "0.1", "5", "mm", "0.02", "asynMotor", "0", "0", "$(VELO)", "0.5", "0", "0", "", "100.02", "3.98", "", "", "MAJOR", "", "1000", "", "", "", "0", "0", "", "", "0", "0", "0", "", "0", "0", "1", "0", "0", "NO_ALARM", "NO_ALARM", "1", "1", "Use motor summary screen", "IDGAP", "None", "", "$(DESC)", "TS16K-MO-SERVO-01", "3" }
+    { "TS16K-MO-SERVC-01:CS", ":GAP", "PPMAC_1_CS_2", "1", "ID Gap", "0.0001", "1", "5", "mm", "0.02", "asynMotor", "0", "0", "$(VELO)", "0.5", "0", "0", "", "100.02", "3.98", "", "", "MAJOR", "", "1000", "", "", "", "0", "0", "", "", "0", "0", "0", "", "0", "0", "1", "0", "0", "NO_ALARM", "NO_ALARM", "1", "1", "Use motor summary screen", "IDGAP", "None", "", "$(DESC)", "TS16K-MO-SERVO-01", "2" }
+    { "TS16K-MO-SERVC-01:CS", ":OFFSET", "PPMAC_1_CS_3", "1", "ID Offset", "0.0001", "0.1", "5", "mm", "0.02", "asynMotor", "0", "0", "$(VELO)", "0.5", "0", "0", "", "100.02", "3.98", "", "", "MAJOR", "", "1000", "", "", "", "0", "0", "", "", "0", "0", "0", "", "0", "0", "1", "0", "0", "NO_ALARM", "NO_ALARM", "1", "1", "Use motor summary screen", "IDGAP", "None", "", "$(DESC)", "TS16K-MO-SERVO-01", "3" }
 }
 
 # Macros:
