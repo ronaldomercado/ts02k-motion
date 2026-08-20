@@ -21,16 +21,6 @@ pattern { IOC }
 }
 
 # Macros:
-#  name      name for gui elements
-#  EDM_FILE  edm screen, defaults to ioc_stats_softdls.edl
-#  IOC       ioc name
-file $(DEVIOCSTATS)/db/iocGui.db
-{
-pattern { name, EDM_FILE, IOC }
-    { "IOC.TS16K-MO", "ioc_stats_softdls.edl", "TS16K-MO-IOC-01" }
-}
-
-# Macros:
 #  PORT      The asyn port for the pmac controller
 #  P         PV Prefix
 #  NAXES     Number of axes
