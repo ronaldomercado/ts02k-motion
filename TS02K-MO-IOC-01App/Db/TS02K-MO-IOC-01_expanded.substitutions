@@ -219,6 +219,12 @@ pattern { prefix, port, name }
     { "TS16K-MO-PMAC-01", "pwbrick", "IDGUI.ENCSYNC" }
 }
 
+file $(IDMOTION)/db/IDM_ampLoss.template
+{
+pattern {prefix, port}
+    { "TS16K-MO-PMAC-01", "pwbrick" }
+}
+
 # Macros:
 #  prefix  record prefix
 #  port    powerbrick asyn port from pmacCreateController invocation
